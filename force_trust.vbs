@@ -1,0 +1,3 @@
+MsgBox "To make the website secure, Windows needs to trust our local certificate." & vbCrLf & vbCrLf & "1. Click OK here." & vbCrLf & "2. Look at your Windows taskbar for a flashing shield icon (User Account Control)." & vbCrLf & "3. Click it and select YES." & vbCrLf & vbCrLf & "If you don't do this, Chrome will always say 'Not Secure'.", 64, "Security Setup Required"
+Set objShell = CreateObject("Shell.Application")
+objShell.ShellExecute "powershell.exe", "-ExecutionPolicy Bypass -NoProfile -WindowStyle Normal -Command ""Import-Certificate -FilePath 'c:\Users\mohan\.gemini\antigravity\scratch\enterprise-repo-dashboard\server.pem' -CertStoreLocation Cert:\LocalMachine\Root; Start-Sleep -Seconds 2""", "", "runas", 1

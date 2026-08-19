@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Neuro</title>
+    
+    <!-- Fonts for Agentic Neuro Theme -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css?v=1787037500">
+    
+    <!-- React & ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+    
+    <!-- Lucide Icons UMD -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Google Translate for full page translation -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'en,af,sq,am,ar,hy,az,eu,be,bn,bs,bg,ca,ceb,ny,zh-CN,zh-TW,co,hr,cs,da,nl,eo,et,tl,fi,fr,fy,gl,ka,de,el,gu,ht,ha,haw,iw,hi,hmn,hu,is,ig,id,ga,it,ja,jw,kn,kk,km,ko,ku,ky,lo,la,lv,lt,lb,mk,mg,ms,ml,mt,mi,mr,mn,my,ne,no,ps,fa,pl,pt,ma,ro,ru,sm,gd,sr,st,sn,sd,si,sk,sl,so,es,su,sw,sv,tg,ta,te,th,tr,uk,ur,uz,vi,cy,xh,yi,yo,zu',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        window.onerror = function(msg, src, line, col, err) {
+            var box = document.getElementById('error-box');
+            if (box) {
+                box.style.display = 'block';
+                box.innerHTML += '<b>JS Error (line ' + line + '):</b><br>' + msg + '<br><small>' + src + '</small><br><br>';
+            }
+        };
+        var oldError = console.error;
+        console.error = function() {
+            oldError.apply(console, arguments);
+            var box = document.getElementById('error-box');
+            if (box) {
+                box.style.display = 'block';
+                box.innerHTML += '<b>Console Error:</b><br>' + Array.from(arguments).join(' ') + '<br><br>';
+            }
+        };
+    </script>
+</head>
+<body>
+    <div id="error-box" style="display:none;position:fixed;top:10px;left:10px;right:10px;max-height:80vh;overflow-y:auto;background:#fee;border:2px solid red;padding:1rem;font-family:monospace;z-index:9999;border-radius:8px;font-size:14px;white-space:pre-wrap;"></div>
+    <div id="root"></div>
+    <script type="text/babel" src="main.jsx?v=1787038100"></script>
+</body>
+</html>

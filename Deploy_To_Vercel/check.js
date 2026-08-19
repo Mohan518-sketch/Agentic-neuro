@@ -1,0 +1,1 @@
+const fs = require('fs'); const Babel = require('@babel/standalone'); try { Babel.transform(fs.readFileSync('app.jsx', 'utf8'), { presets: ['react'] }); console.log('Syntax OK'); } catch (e) { console.error('Syntax Error:', e.message); }

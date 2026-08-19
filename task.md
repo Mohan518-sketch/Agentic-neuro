@@ -1,0 +1,11 @@
+- [x] Update `app.jsx` with new dashboard layout
+  - [x] Add mock data for team members and working hours
+  - [x] Add working hours/modification data to `files` state
+  - [x] Replace existing dashboard rendering with grid layout
+  - [x] Display Working hours of files
+  - [x] Display Modification of files
+  - [x] Display Employee hours
+  - [x] Display Team Lead hours
+  - [x] Display Total team hours
+- [x] Add any necessary styles to `index.css` (if inline styles aren't enough)
+- [x] Verify layout renders properly

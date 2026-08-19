@@ -1,0 +1,14 @@
+*.vbs
+*.ps1
+*.py
+*.exe
+*.bat
+*.key
+*.pem
+*.log
+start_*
+force_*
+setup_*
+task.md
+node-v20.11.1-win-x64
+node.zip
